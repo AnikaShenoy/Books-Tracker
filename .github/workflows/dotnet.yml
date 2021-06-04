@@ -22,7 +22,7 @@ jobs:
     - name: Publish .NET Core Project
       run: dotnet publish Books-Tracker.csproj -c Release -o release --nologo
     - name: Commit wwwroot to GitHub Pages
-      uses: AnikaShenoy/Books-Tracker@1.0
+      uses: AnikaShenoy/Books-Tracker
       with:
         BRANCH: gh-pages
         FOLDER: release/wwwroot
